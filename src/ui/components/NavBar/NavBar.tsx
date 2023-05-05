@@ -4,17 +4,8 @@ import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
-import IconButton from "@mui/material/IconButton";
-import MenuIcon from "@mui/icons-material/Menu";
 
-import {
-  BrowserRouter,
-  Routes,
-  Route,
-  NavLink,
-  Link,
-  Navigate,
-} from "react-router-dom";
+import { BrowserRouter, Routes, Route, Link, Navigate } from "react-router-dom";
 import { Suspense } from "react";
 import { routes } from "../../navigation/routes";
 

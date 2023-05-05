@@ -13,7 +13,7 @@ import React from "react";
 import useLocalStorage from "../../hooks/useLocalStorage";
 
 const Rentals = () => {
-  const [todos, setTodos] = useLocalStorage("todos", []);
+  const { rentals } = useLocalStorage();
 
   return (
     <Box
@@ -38,7 +38,7 @@ const Rentals = () => {
             </TableRow>
           </TableHead>
           <TableBody>
-            {todos.map((row: any, index: any) => (
+            {rentals.map((row: any, index: any) => (
               <TableRow
                 key={index}
                 sx={{ "&:last-child td, &:last-child th": { border: 0 } }}

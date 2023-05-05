@@ -1,16 +1,26 @@
 import { useState, useEffect } from "react";
 
-const useLocalStorage = (key: string, defaultValue: any) => {
-  const [value, setValue] = useState(() => {
-    const storedValue = localStorage.getItem(key);
-    return storedValue ? JSON.parse(storedValue) : defaultValue;
-  });
+const useLocalStorage = () => {
+  const rentalsString = localStorage.getItem("rentals");
+  const rentals = rentalsString ? JSON.parse(rentalsString) : [];
+  console.log(
+    "🚀 ~ file: useLocalStorage.ts:7 ~ useLocalStorage ~ rentals:",
+    rentals
+  );
 
-  useEffect(() => {
-    localStorage.setItem(key, JSON.stringify(value));
-  }, [key, value]);
+  const addItem = (item: any) => {
+    const rentalsString = localStorage.getItem("rentals");
+    const rentals = rentalsString ? JSON.parse(rentalsString) : [];
+    if (rentals.length > 0) {
+      console.log("es mayor a cero");
+      rentals.push(item);
+      localStorage.setItem("rentals", JSON.stringify(rentals));
+    } else {
+      console.log("no es mayor");
+    }
+  };
 
-  return [value, setValue];
+  return { rentals, addItem };
 };
 
 export default useLocalStorage;
