@@ -1,0 +1,65 @@
+[
+  {
+    "id": 1,
+    "type": "Electric",
+    "name": "E-Bike 1",
+    "price": 10,
+    "image": "https://source.unsplash.com/300x200/?bike,electric"
+  },
+  {
+    "id": 2,
+    "type": "Electric",
+    "name": "E-Bike 2",
+    "price": 10,
+    "image": "https://source.unsplash.com/300x200/?bike,electric"
+  },
+  {
+    "id": 3,
+    "type": "Electric",
+    "name": "E-Bike 3",
+    "price": 10,
+    "image": "https://source.unsplash.com/300x200/?bike,electric"
+  },
+  {
+    "id": 4,
+    "type": "Normal",
+    "name": "Bike 1",
+    "price": 10,
+    "image": "https://source.unsplash.com/300x200/?bike,normal"
+  },
+  {
+    "id": 5,
+    "type": "Normal",
+    "name": "Bike 2",
+    "price": 10,
+    "image": "https://source.unsplash.com/300x200/?bike,normal"
+  },
+  {
+    "id": 6,
+    "type": "Normal",
+    "name": "Bike 3",
+    "price": 10,
+    "image": "https://source.unsplash.com/300x200/?bike,normal"
+  },
+  {
+    "id": 7,
+    "type": "Old",
+    "name": "Vintage Bike 1",
+    "price": 10,
+    "image": "https://source.unsplash.com/300x200/?bike,vintage"
+  },
+  {
+    "id": 8,
+    "type": "Old",
+    "name": "Vintage Bike 2",
+    "price": 10,
+    "image": "https://source.unsplash.com/300x200/?bike,vintage"
+  },
+  {
+    "id": 9,
+    "type": "Old",
+    "name": "Vintage Bike 3",
+    "price": 10,
+    "image": "https://source.unsplash.com/300x200/?bike,vintage"
+  }
+]
